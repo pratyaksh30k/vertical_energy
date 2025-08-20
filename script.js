@@ -1,3 +1,26 @@
+preloadImages([
+  "./assets/3d-solar-pannels-project-energy-saving.jpg",
+  "./assets/alex-eckermann-ofdFj1bUKQw-unsplash.jpg",
+  "./assets/american-public-power-association-XGAZzyLzn18-unsplash.jpg",
+  "./assets/anders-j-hxUcl0nUsIY-unsplash.jpg",
+  "./assets/engineer-electric-woman-checking-maintenance-solar-cells.jpg",
+  "./assets/gonz-ddl-a1Lm99Kkqtg-unsplash.jpg",
+  "./assets/man-working-environment-project-close-up.jpg",
+  "./assets/pexels-hasan-zahra-1120724-2118560.jpg",
+  "./assets/pexels-pixabay-371917.jpg",
+  "./assets/Vertical energy logo.png",
+  "./assets/Vertical energy white logo.png",
+  "./assets/Vertical energy white wordmark.png",
+  "./assets/windmills-1838788_1920.jpg",
+]);
+
+function preloadImages(urls) {
+  urls.forEach((url) => {
+    const img = new Image();
+    img.src = url;
+  });
+}
+
 function page1() {
   const page = document.getElementById("page1");
   page.classList.remove("hidden");
